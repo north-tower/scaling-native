@@ -77,14 +77,14 @@ const FeaturedRow2 = ({id, title, description }) => {
             name: "999",
             description: "Fire",
             id: "3",
-            image: "https://images.unsplash.com/photo-1484301548518-d0e0a5db0fc8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHJ1c3RpYyUyMGludGVyaW9yfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+            image: "https://images.unsplash.com/photo-1542718311-3bba3adc74ec?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGVtZXJnZW5jeSUyMHNlcnZpY2VzfGVufDB8fDB8fHww",
           },
           {
             name: "112",
             description: "Rescue",
             price: 10.99,
             id: "4",
-            image: "https://images.unsplash.com/photo-1540809799-5da9372c3f64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHJ1c3RpYyUyMGludGVyaW9yfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+            image: "https://images.unsplash.com/photo-1586470202424-a6f766679b45?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           },
         ]} long={10} lat={0} />
         <ResturantCard2 id={24} imgUrl="https://plus.unsplash.com/premium_photo-1661306409866-18a31687d71b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHJvYWQlMjBzaWRlJTIwYXNzaXRhbmNlfGVufDB8fDB8fHww"
