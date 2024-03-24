@@ -67,7 +67,11 @@ const ResturantScreen = () => {
 
                 </View>
                 <TouchableOpacity style={tw`flex-row items-center p-4 
-                border-gray-300`}>
+                border-gray-300`}  onPress={() => {
+                    navigation.navigate("Faq", {id, imgUrl, title, rating, genre, address, short_description, dishes, long, lat,
+            
+                    });
+                }} >
                     <QuestionMarkCircleIcon color="gray" opacity={0.3} size={20} />
                     <Text style={tw`pl-2 flex-1 text-gray-300 text-xs font-bold`}>
                         FAQ

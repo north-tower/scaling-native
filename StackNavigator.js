@@ -11,6 +11,7 @@ import DeliveryScreen from './screens/DeliveryScreen'
 import PreparingOrderScreen from './screens/PreparingOrderScreen'
 import ContactScreen  from './screens/ContactScreen'
 import InfoScreen from './screens/InfoScreen'
+import FaqScreen from './screens/FaqScreen'
 
 
 const Stack = createNativeStackNavigator()
@@ -21,16 +22,37 @@ const StackNavigator = () => {
     <Stack.Navigator>
         {user ? (
             <>
-             <Stack.Screen name='Home' component={HomeScreen} />
+             <Stack.Screen name='Home' component={HomeScreen} options={{
+                headerShown: false,
+              }} />
        
-            <Stack.Screen name='Chat' component={ChatScreen} />
-            <Stack.Screen name='Resturant' component={ResturantScreen} />
-            <Stack.Screen name='Basket' component={BasketScreen} />
-            <Stack.Screen name='Delivery' component={DeliveryScreen} />
+            <Stack.Screen name='Chat' component={ChatScreen} options={{
+                headerShown: false,
+              }}  />
+            <Stack.Screen name='Resturant' component={ResturantScreen} options={{
+                headerShown: false,
+              }} />
+            <Stack.Screen name='Basket' component={BasketScreen} options={{
+                headerShown: false,
+              }}  />
+            <Stack.Screen name='Delivery' component={DeliveryScreen} options={{
+                headerShown: false,
+              }}  />
             
-            <Stack.Screen name='PreparingOrderScreen' component={PreparingOrderScreen} />
-            <Stack.Screen name='Contact' component={ContactScreen} />
-            <Stack.Screen name='Info' component={InfoScreen} />
+            <Stack.Screen name='PreparingOrderScreen' component={PreparingOrderScreen}  options={{
+                headerShown: false,
+              }}  />
+            <Stack.Screen name='Contact' component={ContactScreen} options={{
+                headerShown: false,
+              }}  />
+            <Stack.Screen name='Info' component={InfoScreen} options={{
+                headerShown: false,
+              }}  />
+            <Stack.Screen name='Faq' component={FaqScreen}  options={{
+                headerShown: false,
+              }} />
+
+
 
 
 
