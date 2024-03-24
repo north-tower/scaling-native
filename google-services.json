@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "980160263965",
+    "firebase_url": "https://saas-68e2f-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "saas-68e2f",
+    "storage_bucket": "saas-68e2f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980160263965:android:2e89edb59d2208cb5493f4",
+        "android_client_info": {
+          "package_name": "host.exp.exponent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980160263965-buhpjm1sp607r0l6ci4sd6avg9dhuh9p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo5cC0Umi5aHqtsPZqNIfUYyyGk8U8isg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "980160263965-buhpjm1sp607r0l6ci4sd6avg9dhuh9p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
