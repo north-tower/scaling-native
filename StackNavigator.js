@@ -5,7 +5,6 @@ import HomeScreen from './screens/HomeScreen'
 import ChatScreen from './screens/ChatScreen'
 import LoginScreen from './screens/LoginScreen'
 import ResturantScreen from './screens/ResturantScreen'
-import useAuth from './hooks/useAuth'
 import BasketScreen from './screens/BasketScreen'
 import DeliveryScreen from './screens/DeliveryScreen'
 import PreparingOrderScreen from './screens/PreparingOrderScreen'
@@ -17,7 +16,7 @@ import FaqScreen from './screens/FaqScreen'
 const Stack = createNativeStackNavigator()
 
 const StackNavigator = () => {
-    const {user} = useAuth();
+    const user = true;
   return (
     <Stack.Navigator>
         {user ? (
