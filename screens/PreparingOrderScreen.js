@@ -13,7 +13,7 @@ const PreparingOrderScreen = () => {
 
     useEffect(() => {
         setTimeout(() => {
-            navigation.navigate("Delivery");
+            navigation.navigate("Home");
         }, 4000);
     }, []);
 

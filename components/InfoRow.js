@@ -18,7 +18,7 @@ const InfoRow = ({id, name, description, price, image }) => {
                   </View>
                   <Progress.Bar size={30} color="green" indeterminate={true} />
                   <Text style={tw`mt-3 text-gray-500`}>
-                      Your order at is being prepared
+                      
                   </Text>
             </View>
   )
