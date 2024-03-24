@@ -77,7 +77,7 @@ const ContactScreen = () => {
        
       <View style={tw`pb-36`} >
                 <Text style={tw`px-4 pt-6 mb-3 text-black font-bold text-xl`}>
-                    Nearby
+                    Contacts
                 </Text>
 
                 {dishes.map(dish=>

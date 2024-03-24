@@ -19,11 +19,11 @@ const FeaturedRow3 = ({id, title, description }) => {
         paddingHorizontal: 15,
       }} showsHorizontalScrollIndicator={false} style={tw`pt-4`} >
         <ResturantCard3 id={23} imgUrl="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80"
-         title="Cuts" rating={9.5} genre="Material" 
-         short_description="Ready to help." dishes ={[
+         title="Natural Disasters" rating={9.5} genre="Material" 
+         short_description="Natural Disasters" dishes ={[
             {
-              name: "Deep",
-              description: "Apply Pressure",
+              name: "Earthquakes",
+              description: "Drop, Cover, and Hold On during shaking,Move away from windows, heavy furniture, and tall objects,If outdoors, move to an open area away from buildings, trees, and power lines.",
               id: "3",
               image: "https://images.unsplash.com/photo-1484301548518-d0e0a5db0fc8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHJ1c3RpYyUyMGludGVyaW9yfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
             },

@@ -53,7 +53,7 @@ const HomeScreen = () => {
             description="Community Emergency Response Teams (CERT) serve as crucial emergency contacts, comprising trained volunteers who assist first responders during disasters or large-scale emergencies. They provide immediate support, aid in search and rescue operations, and help with disaster response and recovery efforts, enhancing overall community resilience and preparedness."
             id="2" />
             <FeaturedRow3 title="Information Page" 
-            description="First A."
+            description="Welcome to our Emergency Information Page. Here, you'll find essential guidance on what to do in various emergency situations, including natural disasters and medical emergencies. It's important to familiarize yourself with this information to help you stay safe and prepared."
             id="3" />
             
           </ScrollView>
