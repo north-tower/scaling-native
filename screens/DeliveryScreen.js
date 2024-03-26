@@ -41,9 +41,8 @@ const DeliveryScreen = () => {
 
                     <Progress.Bar size={30} color="green" indeterminate={true} />
                     <Text style={tw`mt-3 text-gray-500`}>
-      
-      </Text>
-                </View>
+                 </Text>
+    </View>
             
 
         </SafeAreaView>

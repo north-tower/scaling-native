@@ -11,14 +11,27 @@ import PreparingOrderScreen from './screens/PreparingOrderScreen'
 import ContactScreen  from './screens/ContactScreen'
 import InfoScreen from './screens/InfoScreen'
 import FaqScreen from './screens/FaqScreen'
+import { onAuthStateChanged } from 'firebase/auth';
+import { FIREBASE_AUTH } from './FirebaseConfig';
+import { useEffect, useState } from 'react';
+import MessageFormScreen from './screens/MessageFormScreen'
 
 
 const Stack = createNativeStackNavigator()
 
 const StackNavigator = () => {
-    const user = true;
+  // const [user, setUser] = useState(null);
+
+  // useEffect(() => {
+  //   onAuthStateChanged(FIREBASE_AUTH, (user) => {
+  //     console.log('user', user);
+  //     setUser(user);
+  //   });
+  // }, []);
+  const user = true;
   return (
     <Stack.Navigator>
+        {user ? (
       
             <>
              <Stack.Screen name='Home' component={HomeScreen} options={{
@@ -50,16 +63,14 @@ const StackNavigator = () => {
             <Stack.Screen name='Faq' component={FaqScreen}  options={{
                 headerShown: false,
               }} />
-
-
-
-
-
-<Stack.Screen name='Login' component={LoginScreen} />
-
-
-
+              <Stack.Screen name='message' component={MessageFormScreen}  options={{
+                headerShown: false,
+              }} />
             </>
+        ) : (
+          <Stack.Screen name="Login" component={LoginScreen} />
+
+        )}
 
      
 
