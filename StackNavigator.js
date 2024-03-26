@@ -20,15 +20,15 @@ import MessageFormScreen from './screens/MessageFormScreen'
 const Stack = createNativeStackNavigator()
 
 const StackNavigator = () => {
-  // const [user, setUser] = useState(null);
+  const [user, setUser] = useState(null);
 
-  // useEffect(() => {
-  //   onAuthStateChanged(FIREBASE_AUTH, (user) => {
-  //     console.log('user', user);
-  //     setUser(user);
-  //   });
-  // }, []);
-  const user = true;
+  useEffect(() => {
+    onAuthStateChanged(FIREBASE_AUTH, (user) => {
+      console.log('user', user);
+      setUser(user);
+    });
+  }, []);
+  
   return (
     <Stack.Navigator>
         {user ? (
