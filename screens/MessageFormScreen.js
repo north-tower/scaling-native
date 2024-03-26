@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
-import { StyleSheet, SafeAreaView,View,TouchableOpacity, TextInput, Button, Alert } from 'react-native';
+import { StyleSheet, SafeAreaView,View,TouchableOpacity, TextInput, Button, Alert , Text} from 'react-native';
 import { FIRESTORE_DB } from '../FirebaseConfig'; // Assuming you have a reference to Firestore database
 import { addDoc, collection } from 'firebase/firestore';
 import { XCircleIcon } from 'react-native-heroicons/solid';
 import { useNavigation } from "@react-navigation/native"
+import { useSelector } from 'react-redux';
+import { selectResturant } from '../features/resturantSlice';
 
 import tw from "tailwind-react-native-classnames"
 
 const MessageFormScreen = () => {
   const navigation = useNavigation();
+  const resturant = useSelector(selectResturant);
+
 
   const [message, setMessage] = useState('');
 
@@ -37,7 +41,7 @@ const MessageFormScreen = () => {
             <View style={tw`p-5 bg-white `}>
                 <View>
                     <Text style={tw`text-lg text-black
-                    font-bold text-center`}>Report Incident</Text>
+                    font-bold text-center`}>Report Incident to {resturant.title}</Text>
                 </View>
           <TouchableOpacity onPress={navigation.goBack} 
           style={tw`rounded-full bg-gray-100 absolute top-3 right-5`}>
@@ -48,7 +52,13 @@ const MessageFormScreen = () => {
       <TextInput
         value={message}
         style={styles.input}
-        placeholder='Enter your message'
+        placeholder='Location'
+        onChangeText={(text) => setMessage(text)}
+      />
+      <TextInput
+        value={message}
+        style={styles.input}
+        placeholder='Description of Incident'
         onChangeText={(text) => setMessage(text)}
       />
       <Button title="Post Message" onPress={postMessageToFirestore} />
