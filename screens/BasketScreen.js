@@ -35,7 +35,8 @@ const BasketScreen = () => {
       <View style={tw`flex-1 bg-gray-100`}>
         <View style={tw`p-5 bg-white `}>
           <View>
-            <Text style={tw`text-lg text-black font-bold text-center`}>{resturant.title}</Text>
+            <Text style={tw`text-lg text-black
+             font-bold text-center`}>{resturant.title}</Text>
 
           </View>
           <TouchableOpacity onPress={navigation.goBack} 

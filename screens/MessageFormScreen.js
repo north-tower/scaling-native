@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, TextInput, Button, Alert } from 'react-native';
+import { StyleSheet, SafeAreaView,View,TouchableOpacity, TextInput, Button, Alert } from 'react-native';
 import { FIRESTORE_DB } from '../FirebaseConfig'; // Assuming you have a reference to Firestore database
 import { addDoc, collection } from 'firebase/firestore';
+import { XCircleIcon } from 'react-native-heroicons/solid';
+import { useNavigation } from "@react-navigation/native"
+
+import tw from "tailwind-react-native-classnames"
 
 const MessageFormScreen = () => {
+  const navigation = useNavigation();
+
   const [message, setMessage] = useState('');
 
   const firestore = FIRESTORE_DB;
@@ -26,7 +32,19 @@ const MessageFormScreen = () => {
   };
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={tw` bg-white h-full pt-5`}>
+        <View style={tw`flex-1 bg-gray-100`}>
+            <View style={tw`p-5 bg-white `}>
+                <View>
+                    <Text style={tw`text-lg text-black
+                    font-bold text-center`}>Report Incident</Text>
+                </View>
+          <TouchableOpacity onPress={navigation.goBack} 
+          style={tw`rounded-full bg-gray-100 absolute top-3 right-5`}>
+            <XCircleIcon color="#00ccbb" height={50} width={50} />
+          </TouchableOpacity>
+        </View> 
+        
       <TextInput
         value={message}
         style={styles.input}
@@ -35,6 +53,8 @@ const MessageFormScreen = () => {
       />
       <Button title="Post Message" onPress={postMessageToFirestore} />
     </View>
+   
+    </SafeAreaView>
   );
 };
 
