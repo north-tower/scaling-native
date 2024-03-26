@@ -1,4 +1,4 @@
-import { View, Text, Button ,TextInput} from 'react-native'
+import { View, Text, Button ,TextInput, TouchableOpacity} from 'react-native'
 import React from 'react'
 import { useState } from 'react'
 import {useNavigation} from "@react-navigation/native"
@@ -42,7 +42,9 @@ const HomeScreen = () => {
                 <MagnifyingGlassCircleIcon color="gray"  />
                 <TextInput placeholder='Emergency Services' />
            </View>
+           <TouchableOpacity onPress={() => navigation.navigate("message")}>
            <AdjustmentsHorizontalIcon  color="#00CCBB" />
+           </TouchableOpacity>
           </View>
           <ScrollView style={tw`bg-gray-100`} contentContainerStyle={{ paddingBottom: 100,}}>
             <Categories />

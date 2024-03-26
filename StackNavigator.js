@@ -14,6 +14,7 @@ import FaqScreen from './screens/FaqScreen'
 import { onAuthStateChanged } from 'firebase/auth';
 import { FIREBASE_AUTH } from './FirebaseConfig';
 import { useEffect, useState } from 'react';
+import MessageFormScreen from './screens/MessageFormScreen'
 
 
 const Stack = createNativeStackNavigator()
@@ -59,6 +60,9 @@ const StackNavigator = () => {
                 headerShown: false,
               }}  />
             <Stack.Screen name='Faq' component={FaqScreen}  options={{
+                headerShown: false,
+              }} />
+              <Stack.Screen name='message' component={MessageFormScreen}  options={{
                 headerShown: false,
               }} />
             </>

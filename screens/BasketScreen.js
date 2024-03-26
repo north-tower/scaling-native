@@ -62,8 +62,7 @@ const BasketScreen = () => {
           ))}
        
        <View style={tw`p-5 mt-1 bg-white `}>        
-            <Text style={tw`text-gray-500`}>To connect with our talented designers and experience the utmost flexibility, 
-            reliability, and efficiency in our professional interior design services, click the button below. 
+            <Text style={tw`text-gray-500`}>Connect
             </Text>
     
         
